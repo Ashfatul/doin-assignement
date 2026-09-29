@@ -75,7 +75,7 @@ export default function Courses() {
           ))}
 
           <Link href="#" className="text-[#003BE2]">
-          + More
+            + More
           </Link>
         </div>
 
@@ -85,7 +85,7 @@ export default function Courses() {
             <div key={course.id} className="flex flex-col bg-white border border-border-light rounded-[24px] p-4 gap-4 hover:shadow-xl transition-shadow cursor-pointer group">
               
               {/* Thumbnail Placeholder */}
-              <div className="w-full h-[195px] bg-[#443131] rounded-xl flex items-start p-3 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+              <div className="w-full h-[195px] bg-[#443131] rounded-xl flex items-end p-3 relative overflow-hidden group-hover:opacity-90 transition-opacity">
                 {/* Overlay stats */}
                 <div className="flex flex-wrap items-center gap-3">
                    <div className="px-3 py-1.5 bg-[#f6f6f6] rounded-full font-sans font-medium text-xs text-text-gray">

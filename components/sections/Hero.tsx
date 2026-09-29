@@ -4,16 +4,17 @@ import { Search } from 'lucide-react';
 import Header from './Header';
 import { motion } from 'framer-motion';
 import Grid from '../ui/Grid';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative w-full bg-primary overflow-hidden text-center">
       {/* Background Rings / Decorative lines can go here as absolutely positioned SVGs */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-secondary opacity-10 pointer-events-none" />
+      <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-[#CBFC01] pointer-events-none" />
 
       <Header />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 py-12 md:py-24 lg:px-[120px] flex flex-col items-center gap-12">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 pt-12 md:pt-24 lg:px-[120px] flex flex-col items-center gap-12">
         {/* Left Content Area */}
         <div className="flex-1 max-w-[935px] flex flex-col gap-8">
           <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
@@ -42,6 +43,14 @@ export default function Hero() {
         {/* Right Content Area / Images */}
         <div className="flex-1 relative w-full h-[600px] hidden lg:flex items-center justify-center">
           
+          {/* Hero Man */}
+          <div className="absolute bottom-0 w-[640px] h-[457px]">
+            <Image src="/images/hero-man.png" alt="Hero Man" className="w-full h-full object-contain drop-shadow-2xl" width={640} height={457} 
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+          </div>
           {/* Animated 3D Shapes */}
           <div className="absolute top-0 right-0 w-full h-full pointer-events-none">
             {/* Main Center Sphere */}

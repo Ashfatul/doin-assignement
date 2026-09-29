@@ -37,8 +37,8 @@ export default function Categories() {
                 key={cat.id} 
                 className="flex flex-col items-center justify-center min-w-[150px] lg:w-[167px] h-[167px] bg-background-alt rounded-[24px] gap-4 hover:shadow-lg transition-shadow cursor-pointer"
               >
-                <div className="w-[72px] h-[72px] rounded-full bg-white flex items-center justify-center text-border-dark shadow-sm">
-                   <Icon className="w-8 h-8" strokeWidth={1.5} />
+                <div className="w-[72px] h-[72px] rounded-full bg-secondary flex items-center justify-center text-border-dark shadow-sm">
+                   <Icon className="w-8 h-8 text-text-dark" strokeWidth={1.5} />
                 </div>
                 <span className="font-sans font-normal text-lg text-text-dark text-center leading-tight">
                   {cat.name}
