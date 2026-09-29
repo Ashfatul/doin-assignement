@@ -12,8 +12,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col w-full overflow-x-hidden bg-white">
       <Hero />
       <Partners />
-      <Categories />
       <Courses />
+      <Categories />
       <PathToGrowth />
       <CreatorCTA />
       <Testimonials />

@@ -1,7 +1,8 @@
 import { BarChart2, Star } from 'lucide-react';
+import Link from 'next/link';
 
 const TABS = [
-  'Featured', 'Music', 'Drawing & Painting', 'Marketing', 'Animation', 'Social Media', 'UI/UX Design', 'Creative Marketing'
+  'Featured', 'Music', 'Drawing & Painting', 'Marketing', 'Animation', 'Social Media', 'UI/UX Design', 'Creative Marketing', 'Digital Illustration', 'Film & Video', 'Crafts', 'Freelance & Entrepreneurship', 'Graphic Design', 'Photography', 'Productivity', 'Web Development', 'Data Science', 'Cooking'
 ];
 
 const COURSES = [
@@ -59,7 +60,7 @@ export default function Courses() {
         </div>
 
         {/* Tabs */}
-        <div className="flex items-center gap-4 overflow-x-auto pb-4 hide-scrollbar justify-start xl:justify-center">
+        <div className="flex items-center gap-4 overflow-x-auto pb-4 hide-scrollbar justify-start xl:justify-center flex-wrap">
           {TABS.map((tab, idx) => (
             <button 
               key={idx}
@@ -72,6 +73,10 @@ export default function Courses() {
               {tab}
             </button>
           ))}
+
+          <Link href="#" className="text-[#003BE2]">
+          + More
+          </Link>
         </div>
 
         {/* Course Grid */}

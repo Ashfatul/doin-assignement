@@ -3,19 +3,20 @@
 import { Search } from 'lucide-react';
 import Header from './Header';
 import { motion } from 'framer-motion';
+import Grid from '../ui/Grid';
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-primary overflow-hidden">
+    <section className="relative w-full bg-primary overflow-hidden text-center">
       {/* Background Rings / Decorative lines can go here as absolutely positioned SVGs */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-secondary opacity-10 pointer-events-none" />
 
       <Header />
 
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 py-12 md:py-24 lg:px-[120px] flex flex-col lg:flex-row items-center gap-12">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 py-12 md:py-24 lg:px-[120px] flex flex-col items-center gap-12">
         {/* Left Content Area */}
         <div className="flex-1 max-w-[935px] flex flex-col gap-8">
-          <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white">
+          <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
             Get Access to Hundreds Courses Available
           </h1>
           <p className="font-sans font-normal text-lg text-[#e5e6e8] max-w-[819px]">
@@ -23,7 +24,7 @@ export default function Hero() {
           </p>
 
           {/* Search Bar */}
-          <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 bg-white/10 p-2 rounded-full w-full max-w-[581px] backdrop-blur-sm">
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto rounded-full w-full max-w-[581px]">
             <div className="flex-1 flex items-center gap-3 px-6 py-3 bg-white rounded-full w-full">
               <Search className="w-5 h-5 text-text-muted" />
               <input
@@ -82,6 +83,8 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      <Grid/>
     </section>
   );
 }

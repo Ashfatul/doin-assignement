@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion';
 
 const PARTNERS = [
-  '/images/partner-1.svg',
-  '/images/partner-2.svg',
-  '/images/partner-3.svg',
-  '/images/partner-4.svg',
-  '/images/partner-5.svg',
+  '/images/partners/partner1.svg',
+  '/images/partners/partner2.svg',
+  '/images/partners/partner3.svg',
+  '/images/partners/partner4.svg',
+  '/images/partners/partner5.svg',
 ];
 
 export default function Partners() {
