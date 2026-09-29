@@ -1,15 +1,49 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
+const PARTNERS = [
+  '/images/partner-1.svg',
+  '/images/partner-2.svg',
+  '/images/partner-3.svg',
+  '/images/partner-4.svg',
+  '/images/partner-5.svg',
+];
+
 export default function Partners() {
   return (
-    <section className="w-full bg-background-alt py-12 border-y border-border-light/20">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px]">
-        {/* We use standard text placeholders for partner logos since SVG exports were not available */}
-        <div className="flex flex-wrap items-center justify-center md:justify-between gap-12 opacity-50 grayscale">
-          {['Company 1', 'Company 2', 'Company 3', 'Company 4', 'Company 5', 'Company 6'].map((partner, idx) => (
-            <div key={idx} className="font-display font-bold text-2xl text-text-muted flex items-center justify-center h-10 min-w-[120px]">
-              {partner}
+    <section className="w-full bg-background-alt py-12 border-y border-border-light/20 overflow-hidden flex items-center">
+      <div className="flex w-full whitespace-nowrap">
+        {/* Infinite Marquee Animation */}
+        <motion.div
+          className="flex items-center gap-16 md:gap-24 px-12"
+          animate={{ x: [0, -1035] }}
+          transition={{
+            x: {
+              repeat: Infinity,
+              repeatType: 'loop',
+              duration: 20,
+              ease: 'linear',
+            },
+          }}
+        >
+          {/* We duplicate the array to create a seamless loop */}
+          {[...PARTNERS, ...PARTNERS, ...PARTNERS].map((src, idx) => (
+            <div key={idx} className="flex items-center justify-center h-10 w-[150px] bg-gray-200/50 rounded-lg animate-pulse" title="Replace with actual partner logo">
+              {/* Fallback box shown until images are provided by user */}
+              <img 
+                src={src} 
+                alt={`Partner ${idx}`} 
+                className="w-full h-full object-contain filter grayscale opacity-60 hover:opacity-100 transition-opacity"
+                onError={(e) => {
+                  // Hide broken image icon if image is missing
+                  (e.target as HTMLImageElement).style.display = 'none';
+                  (e.target as HTMLImageElement).parentElement!.innerText = 'Logo';
+                }}
+              />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

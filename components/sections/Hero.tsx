@@ -1,5 +1,8 @@
+'use client';
+
 import { Search } from 'lucide-react';
 import Header from './Header';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -36,13 +39,21 @@ export default function Hero() {
         </div>
 
         {/* Right Content Area / Images */}
-        <div className="flex-1 relative w-full h-[500px] hidden lg:block">
-          {/* We'll use placeholders for the 3D ornaments and images for now */}
-          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] bg-white/20 rounded-3xl backdrop-blur-md flex items-center justify-center">
-             <span className="text-white">Main Image Placeholder</span>
+        <div className="flex-1 relative w-full h-[600px] hidden lg:flex items-center justify-center">
+          
+          {/* Animated 3D Shapes */}
+          <div className="absolute top-0 right-0 w-full h-full pointer-events-none">
+            {/* Main Center Sphere */}
+            <AnimatedShape src="/images/hero-shape-1.png" className="absolute top-1/2 left-1/2 w-[250px] -ml-[125px] -mt-[125px]" delay={0} yRange={[-10, 10]} />
+            {/* Top Right Cone */}
+            <AnimatedShape src="/images/hero-shape-2.png" className="absolute top-[10%] right-[10%] w-[120px]" delay={1} yRange={[-15, 15]} rotateRange={[0, 15, 0]} />
+            {/* Bottom Right Ring */}
+            <AnimatedShape src="/images/hero-shape-3.png" className="absolute bottom-[20%] right-[5%] w-[150px]" delay={2} yRange={[-20, 20]} rotateRange={[0, -15, 0]} />
+            {/* Top Left Shape */}
+            <AnimatedShape src="/images/hero-shape-4.png" className="absolute top-[20%] left-[5%] w-[100px]" delay={1.5} yRange={[-12, 12]} />
+            {/* Bottom Left Shape */}
+            <AnimatedShape src="/images/hero-shape-5.png" className="absolute bottom-[10%] left-[10%] w-[130px]" delay={0.5} yRange={[-8, 8]} rotateRange={[0, 10, 0]} />
           </div>
-
-          {/* Floating Card: Learning Progress */}
           <div className="absolute -left-10 top-1/4 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
             <span className="font-sans font-medium text-sm text-text-dark">Learning Progress</span>
             <span className="font-heading font-semibold text-5xl text-text-dark">55%</span>
@@ -74,3 +85,29 @@ export default function Hero() {
     </section>
   );
 }
+
+function AnimatedShape({ src, className, delay, yRange, rotateRange = [0, 0, 0] }: { src: string, className: string, delay: number, yRange: number[], rotateRange?: number[] }) {
+  return (
+    <motion.div
+      className={`bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center ${className}`}
+      animate={{ 
+        y: yRange,
+        rotate: rotateRange
+      }}
+      transition={{
+        duration: 4,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+        delay: delay
+      }}
+    >
+      <img src={src} alt="3D Shape" className="w-full h-full object-contain drop-shadow-xl" 
+        onError={(e) => {
+           (e.target as HTMLImageElement).style.display = 'none';
+        }}
+      />
+    </motion.div>
+  );
+}
+

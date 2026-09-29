@@ -32,9 +32,9 @@ export default function PathToGrowth() {
 
           {/* Right Image/Widget Area */}
           <div className="flex-1 relative w-full h-[500px] sm:h-[600px] hidden lg:block">
-            {/* Main Image Placeholder */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[435px] h-[596px] bg-[#d4fb20]/20 rounded-3xl backdrop-blur-md flex items-center justify-center border-4 border-white shadow-2xl">
-              <span className="text-text-dark font-sans">Growth Image</span>
+            {/* Main Image */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] flex items-center justify-center">
+              <img src="/images/growth-image-1.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
             </div>
 
             {/* Widget 1: Total Revenue */}
