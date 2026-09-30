@@ -48,7 +48,7 @@ export default function PathToGrowth() {
           
           {/* Left Text Content */}
           <div className="flex-1 flex flex-col gap-10 max-w-[574px] z-10">
-            <h2 className="font-heading font-semibold text-4xl md:text-[44px] text-text-dark leading-[1.2]">
+            <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-text-dark leading-[1.2]">
               Your Path to Professional Growth Starts Here!
             </h2>
             <p className="font-sans font-normal text-lg text-[#4b4c53] leading-relaxed">
@@ -195,7 +195,7 @@ export default function PathToGrowth() {
 
           {/* Right Text Content */}
           <div className="flex-1 flex flex-col gap-8 max-w-[574px] z-10">
-            <h2 className="font-heading font-semibold text-4xl md:text-[44px] text-text-dark leading-[1.2]">
+            <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-text-dark leading-[1.2]">
               Create & Manage Courses Easily.
             </h2>
             <p className="font-sans font-normal text-lg text-[#4b4c53] leading-relaxed">

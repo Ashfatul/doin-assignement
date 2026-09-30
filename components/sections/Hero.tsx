@@ -32,11 +32,11 @@ export default function Hero() {
                   yRange={[-15, 15]}
                   rotateRange={[0, 15, 0]}
                />
-               <div className="flex-1 max-w-[935px] flex flex-col gap-8 mx-auto">
-                  <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
+               <div className="flex-1 max-w-[935px] flex flex-col gap-8 mx-auto px-6 lg:px-0">
+                  <h1 className="font-heading font-semibold text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
                      Get Access to Hundreds Courses Available
                   </h1>
-                  <p className="font-sans font-normal text-lg text-[#e5e6e8] max-w-[819px]">
+                  <p className="font-sans font-normal text-base md:text-lg text-[#e5e6e8] max-w-[819px] mx-auto text-center">
                      Unlock your creativity, gain valuable knowledge, and grow
                      your business with our wide range of courses.
                   </p>

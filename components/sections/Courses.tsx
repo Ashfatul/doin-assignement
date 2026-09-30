@@ -108,10 +108,10 @@ export default function Courses() {
          <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-12">
             {/* Heading */}
             <div className="flex flex-col items-center text-center gap-4 max-w-[917px] mx-auto">
-               <h2 className="font-heading font-semibold text-4xl md:text-[44px] text-text-main leading-tight">
+               <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-text-main leading-tight">
                   Discover Your Passion, Build Your Skills
                </h2>
-               <p className="font-sans font-normal text-lg text-text-muted">
+               <p className="font-sans font-normal text-base md:text-lg text-text-muted">
                   At Bytespace Courses, we bring you closer to life-changing
                   knowledge. Explore a variety of courses across different
                   fields, from technology to the arts, and make a difference in

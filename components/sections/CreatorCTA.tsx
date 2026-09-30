@@ -21,7 +21,7 @@ export default function CreatorCTA() {
       
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col items-center text-center gap-10">
         <div className="flex flex-col gap-8 max-w-[964px] items-center">
-          <h2 className="font-heading font-semibold text-4xl md:text-[44px] leading-tight text-[#f5f5f6] max-w-[710px]">
+          <h2 className="font-heading font-semibold text-[32px] md:text-[44px] leading-tight text-[#f5f5f6] max-w-[710px]">
             Unlock Your Potential as a Creator with ByteSpace
           </h2>
           <p className="font-sans font-normal text-lg text-[#f5f5f6] leading-relaxed">

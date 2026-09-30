@@ -14,12 +14,12 @@ export default function NotFound() {
         <Grid />
         {/* 404 Text Background (Linear gradient clip text) */}
         <div className="absolute inset-0 -top-50 flex items-center justify-center pointer-events-none z-0">
-          <span className="font-heading font-bold text-[300px] md:text-[480px] leading-none bg-gradient-to-b from-[#cbfc01] to-white/0 bg-clip-text text-transparent select-none">
+          <span className="font-heading font-bold text-[170px] md:text-[480px] leading-none bg-gradient-to-b from-[#cbfc01] to-white/0 bg-clip-text text-transparent select-none -mt-40 md:mt-0">
             404
           </span>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center gap-6 text-center max-w-[935px] px-6 mt-100">
+        <div className="relative z-10 flex flex-col items-center justify-center gap-6 text-center max-w-[935px] px-6 mt-30 md:mt-100">
           <h1 className="font-heading font-semibold text-[40px] md:text-[72px] leading-[1.2] md:leading-[86.4px] text-white">
             The page you are looking for doesn’t exist
           </h1>

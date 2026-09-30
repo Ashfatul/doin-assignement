@@ -58,7 +58,7 @@ export default function Testimonials() {
         
         {/* Header */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-          <h2 className="font-heading font-semibold text-4xl md:text-[44px] text-black leading-tight max-w-[577px]">
+          <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-black leading-tight max-w-[577px]">
             Discover What Our Community Is Saying
           </h2>
           <p className="font-sans font-normal text-lg text-[#4f4f4f] leading-relaxed max-w-[580px]">

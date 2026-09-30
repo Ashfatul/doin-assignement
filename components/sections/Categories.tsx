@@ -17,10 +17,10 @@ export default function Categories() {
         
         {/* Heading Area */}
         <div className="flex flex-col items-center text-center gap-4 mx-auto">
-          <h2 className="font-heading font-semibold text-3xl md:text-[40px] text-black">
+          <h2 className="font-heading font-semibold text-[28px] md:text-[40px] text-black">
             Explore Diverse Learning Paths at Bytespace
           </h2>
-          <p className="font-sans font-normal text-[18px] text-[#82868e] leading-relaxed">
+          <p className="font-sans font-normal text-base md:text-[18px] text-[#82868e] leading-relaxed">
             At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various <br /> fields, ensuring there&apos;s something for everyone. Unleash your potential and explore our carefully curated categories.
           </p>
         </div>
