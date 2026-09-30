@@ -11,6 +11,10 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    
+    // Check scroll position on mount
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

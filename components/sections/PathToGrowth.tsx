@@ -1,10 +1,45 @@
+import Image from 'next/image';
 
 export default function PathToGrowth() {
   return (
     <section className="relative w-full py-16 md:py-32 bg-[#fafafa] overflow-hidden">
       {/* Background Gradients */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#cbfc01] opacity-[0.15] blur-[120px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#cbfc01] opacity-[0.15] blur-[120px] rounded-full pointer-events-none -translate-x-1/3 translate-y-1/3" />
+      {/* Top Left */}
+      <div 
+        className="absolute top-0 left-0 pointer-events-none -translate-x-1/3 -translate-y-1/3 z-0" 
+        style={{
+          width: '1137px',
+          height: '1137px',
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.092) 53%, rgba(203, 252, 1, 0.024) 75%, rgba(203, 252, 1, 0) 100%)'
+        }} 
+      />
+      {/* Top Right */}
+      <div 
+        className="absolute top-0 right-0 pointer-events-none translate-x-1/3 -translate-y-1/3 z-0" 
+        style={{
+          width: '1137px',
+          height: '1137px',
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 59, 226, 0.08) 0%, rgba(0, 59, 226, 0.0184) 53%, rgba(0, 59, 226, 0.0048) 75%, rgba(0, 59, 226, 0) 100%)'
+        }} 
+      />
+      {/* Bottom Left */}
+      <div 
+        className="absolute bottom-0 left-0 pointer-events-none -translate-x-1/3 translate-y-1/3 z-0" 
+        style={{
+          width: '672px',
+          height: '672px',
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.6) 0%, rgba(203, 252, 1, 0.138) 53%, rgba(203, 252, 1, 0.036) 75%, rgba(203, 252, 1, 0) 100%)'
+        }} 
+      />
+      {/* Bottom Right */}
+      <div 
+        className="absolute bottom-0 right-0 pointer-events-none translate-x-1/3 translate-y-1/3 z-0" 
+        style={{
+          width: '1137px',
+          height: '1137px',
+          background: 'radial-gradient(50% 50% at 50% 50%, rgba(0, 59, 226, 0.24) 0%, rgba(0, 59, 226, 0.0552) 53%, rgba(0, 59, 226, 0.0144) 75%, rgba(0, 59, 226, 0) 100%)'
+        }} 
+      />
 
       <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-24 lg:gap-32">
         
@@ -40,15 +75,13 @@ export default function PathToGrowth() {
           {/* Right Image/Widget Area (Boy) */}
           <div className="flex-1 relative w-full h-[500px] sm:h-[600px] hidden lg:block z-10">
             {/* Main Image */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center z-10">
               <img src="/images/growth-image-1.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
             </div>
 
             {/* Scribble (Optional) */}
-            <div className="absolute top-[15%] right-[0%] w-[120px] h-[120px]">
-              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-[#cbfc01]">
-                <path d="M20 80 Q 40 10, 60 70 T 90 20" stroke="currentColor" strokeWidth="12" strokeLinecap="round" fill="none"/>
-              </svg>
+            <div className="absolute top-[15%] right-[0%] w-[216px] h-[216px] z-12">
+              <Image src="/images/spiral.svg" alt="Scribble" width={216} height={216} className="w-full h-full text-[#cbfc01]" />
             </div>
 
             {/* Widget 1: Learn Figma Course Card */}
@@ -79,7 +112,7 @@ export default function PathToGrowth() {
             </div>
 
             {/* Widget 2: Learning Progress */}
-            <div className="absolute top-[45%] right-[-10px] bg-white p-5 rounded-[20px] w-[200px] flex flex-col gap-3 shadow-[0px_20px_40px_rgba(0,0,0,0.08)]">
+            <div className="absolute top-[45%] right-[-10px] bg-white p-5 rounded-[20px] w-[200px] flex flex-col gap-3 shadow-[0px_20px_40px_rgba(0,0,0,0.08)] z-10">
               <span className="font-sans font-medium text-[13px] text-text-dark">Learning Progress</span>
               <span className="font-heading font-bold text-[40px] text-text-dark leading-none">55%</span>
               <div className="w-full h-[6px] bg-[#f3f4f6] rounded-full overflow-hidden mt-1 relative">
@@ -96,15 +129,13 @@ export default function PathToGrowth() {
           {/* Left Image/Widget Area (Girl) */}
           <div className="flex-1 relative w-full h-[500px] sm:h-[600px] hidden lg:block z-10">
             {/* Main Image */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center">
-              <img src="/images/growth-image-1.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center z-10">
+              <img src="/images/growth-image-2.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
             </div>
 
             {/* Scribble (Optional) */}
-            <div className="absolute top-[40%] right-[5%] w-[100px] h-[100px]">
-              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-[#cbfc01]">
-                <path d="M20 20 Q 50 0, 80 40 T 20 80" stroke="currentColor" strokeWidth="14" strokeLinecap="round" fill="none"/>
-              </svg>
+            <div className="absolute top-[10%] right-[15%] w-[216px] h-[216px] z-12">
+              <Image src="/images/spiral2.svg" alt="Scribble" width={216} height={216} className="w-full h-full text-[#cbfc01]" />
             </div>
 
             {/* Widget 1: Total Revenue */}
@@ -137,7 +168,7 @@ export default function PathToGrowth() {
             </div>
 
             {/* Widget 3: Happy Students */}
-            <div className="absolute bottom-[5%] right-[10%] bg-white p-4 rounded-2xl w-[258px] flex flex-col gap-3 shadow-[0px_20px_40px_rgba(0,0,0,0.08)]">
+            <div className="absolute bottom-[30%] right-[0%] bg-white p-4 rounded-2xl w-[258px] flex flex-col gap-3 shadow-[0px_20px_40px_rgba(0,0,0,0.08)] z-10">
               <div className="flex flex-col">
                 <span className="font-sans font-medium text-[14px] text-text-dark">Happy Students</span>
                 <div className="flex items-center gap-1">
