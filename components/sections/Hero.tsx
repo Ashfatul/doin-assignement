@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Hero() {
    return (
-      <section className="relative w-full bg-primary overflow-hidden text-center">
+      <section className="relative w-full bg-primary overflow-hidden text-center pt-[120px]">
          {/* Background Rings / Decorative lines can go here as absolutely positioned SVGs */}
          <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-[#CBFC01] pointer-events-none" />
 
