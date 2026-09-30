@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BarChart2, Star } from 'lucide-react';
 import React from 'react';
+import Grid from '../ui/Grid';
 
 interface AuthLayoutProps {
   title: string;
@@ -12,34 +14,21 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
   return (
     <main className="min-h-screen bg-primary flex flex-col overflow-hidden relative">
       {/* Background Rings */}
-      <div className="absolute top-0 left-0 w-[1440px] h-[1024px] overflow-hidden pointer-events-none">
-        {Array.from({ length: 13 }).map((_, i) => (
-          <div 
-            key={i} 
-            className="absolute left-0 right-0 border-t-2 border-white/5" 
-            style={{ top: `${(i + 1) * 78}px` }}
-          />
-        ))}
-      </div>
+      <Grid />
 
       {/* Auth Simple Header Logo */}
-      <header className="w-full z-50 h-[120px] flex items-center px-6 lg:px-[120px] relative">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-7 h-8 text-secondary">
-            <svg viewBox="0 0 29 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.4375 0L28.875 8V24L14.4375 32L0 24V8L14.4375 0Z" />
-            </svg>
-          </div>
-          <span className="font-display font-bold text-2xl tracking-wide text-white">ByteSpace</span>
+      <header className="w-full z-50 h-[120px] max-w-[1440px] flex items-center relative mx-auto">
+        <Link href="/" className="flex items-center gap-3">
+          <Image src="/images/small-logo.png" alt="Logo" width={37} height={37} className="w-[37px] h-[37px] object-contain" />
         </Link>
       </header>
 
-      <div className="flex-1 w-full max-w-[1440px] mx-auto px-6 lg:px-[120px] flex flex-col lg:flex-row items-center justify-between gap-12 py-12 lg:py-0 relative z-10">
+      <div className="flex-1 w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 py-12 lg:py-0 relative z-10">
         
         {/* Left Side: Graphic & Text */}
         <div className="flex-1 flex flex-col gap-10 max-w-[475px] relative">
           <div className="flex flex-col gap-6">
-            <h1 className="font-heading font-semibold text-4xl md:text-[56px] text-white leading-[1.1]">
+            <h1 className="font-heading font-semibold text-xl text-white leading-[1.1]">
               {title}
             </h1>
             <p className="font-sans font-normal text-lg text-white/80 leading-relaxed">

@@ -10,10 +10,10 @@ export default function LoginPage() {
          <div className="flex flex-col gap-8 w-full">
             {/* Form Header */}
             <div className="flex flex-col gap-2 text-center">
-               <h2 className="font-heading font-semibold text-3xl text-black">
+               <h2 className="font-heading text-lg text-primary text-left">
                   Sign In
                </h2>
-               <p className="font-sans font-normal text-base text-text-muted">
+               <p className="font-sans font-semibold text-text-dark text-left text-[44px]">
                   Welcome Back
                </p>
             </div>
@@ -44,7 +44,7 @@ export default function LoginPage() {
 
                <button
                   type="submit"
-                  className="w-full py-4 mt-2 bg-primary rounded-xl font-sans font-medium text-lg text-white hover:bg-primary/90 transition-colors"
+                  className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-dark hover:bg-secondary/80 cursor-pointer transition-colors"
                >
                   Sign In
                </button>
