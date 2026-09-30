@@ -25,7 +25,7 @@ export default function RegisterPage() {
             <input 
               type="text" 
               placeholder="Jamie Davis" 
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-background-alt font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 
@@ -34,7 +34,7 @@ export default function RegisterPage() {
             <input 
               type="email" 
               placeholder="designer@example.com" 
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-background-alt font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 
@@ -42,8 +42,8 @@ export default function RegisterPage() {
             <label className="font-sans font-medium text-sm text-text-dark">Password</label>
             <input 
               type="password" 
-              placeholder="********" 
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-background-alt font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+               
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 

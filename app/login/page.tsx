@@ -27,7 +27,7 @@ export default function LoginPage() {
                   <input
                      type="email"
                      placeholder="designer@example.com"
-                     className="w-full px-5 py-3 rounded-xl border border-border-light bg-background-alt font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+                     className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
                   />
                </div>
 
@@ -37,8 +37,8 @@ export default function LoginPage() {
                   </label>
                   <input
                      type="password"
-                     placeholder="********"
-                     className="w-full px-5 py-3 rounded-xl border border-border-light bg-background-alt font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+                     
+                     className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
                   />
                </div>
 
