@@ -31,7 +31,7 @@ export default function Hero() {
                   className="absolute bottom-0 right-0 w-[100px] md:w-[150px] lg:w-[210px] opacity-20 lg:opacity-100 hidden sm:block"
                   delay={1}
                   yRange={[-15, 15]}
-                  rotateRange={[0, 15, 0]}
+                  rotateRange={[0, 0, 0]}
                />
                <div className="flex-1 max-w-[935px] flex flex-col gap-8 mx-auto px-6 lg:px-0">
                   <h1 className="font-heading font-semibold text-[36px] sm:text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">

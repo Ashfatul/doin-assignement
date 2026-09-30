@@ -11,9 +11,9 @@ export default function CreatorCTA() {
 
       {/* Animated Floating Shapes */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
-        <AnimatedShape src="/images/cta/cta-shape-1.png" className="absolute top-0 left-0 w-[120px] md:w-[180px] lg:w-[286px] opacity-20 lg:opacity-100 hidden sm:block" delay={0} yRange={[-15, 15]} rotateRange={[0, 10, 0]} />
-        <AnimatedShape src="/images/cta/cta-shape-2.png" className="absolute top-[10%] -right-[20px] w-[100px] md:w-[150px] lg:w-[200px] opacity-20 lg:opacity-100" delay={1.5} yRange={[-10, 10]} rotateRange={[0, -10, 0]} />
-        <AnimatedShape src="/images/cta/cta-shape-3.png" className="absolute -bottom-[22px] left-[0%] w-[150px] md:w-[220px] lg:w-[343px] opacity-20 lg:opacity-100 hidden md:block" delay={0.5} yRange={[-20, 20]} rotateRange={[0, 15, 0]} />
+        <AnimatedShape src="/images/cta/cta-shape-1.png" className="absolute top-0 left-0 w-[120px] md:w-[180px] lg:w-[286px] opacity-20 lg:opacity-100 hidden sm:block" delay={0} yRange={[-5, 5]} rotateRange={[0, 0, 0]} />
+        <AnimatedShape src="/images/cta/cta-shape-2.png" className="absolute top-[10%] -right-[20px] w-[100px] md:w-[150px] lg:w-[200px] opacity-20 lg:opacity-100" delay={1.5} yRange={[-5, 5]} rotateRange={[0, -5, 0]} />
+        <AnimatedShape src="/images/cta/cta-shape-3.png" className="absolute -bottom-[22px] left-[0%] w-[150px] md:w-[220px] lg:w-[343px] opacity-20 lg:opacity-100 hidden md:block" delay={0.5} yRange={[-5, 5]} rotateRange={[0, 5, 0]} />
         <AnimatedShape src="/images/cta/cta-shape-4.png" className="absolute bottom-[0%] right-0 w-[150px] md:w-[200px] lg:w-[330px] opacity-20 lg:opacity-100" delay={2} yRange={[-12, 12]} />
         <AnimatedShape src="/images/cta/cta-shape-5.png" className="absolute top-[6%] left-[10%] w-[175px] hidden lg:block" delay={1.5} yRange={[-10, 10]} rotateRange={[0, -10, 0]} />
         <AnimatedShape src="/images/cta/cta-shape-6.png" className="absolute top-[5%] right-[15%] w-[188px] hidden lg:block" delay={0.5} yRange={[-20, 20]} rotateRange={[0, 15, 0]} />
