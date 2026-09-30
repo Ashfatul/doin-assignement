@@ -50,10 +50,10 @@ export default function Header() {
 
       {/* Right Nav */}
       <div className="flex items-center gap-6">
-        <Link href="/signin" className="hidden sm:block font-sans font-normal text-base text-white/95 hover:text-white transition-colors">
+        <Link href="/login" className="hidden sm:block font-sans font-normal text-base text-white/95 hover:text-white transition-colors">
           Sign In
         </Link>
-        <Link href="/join" className="hidden sm:block font-sans font-normal text-base text-white/95 hover:text-white transition-colors">
+        <Link href="/register" className="hidden sm:block font-sans font-normal text-base text-white/95 hover:text-white transition-colors">
           Join Us
         </Link>
         <button aria-label="Cart" className="text-white/95 hover:text-white transition-colors">
