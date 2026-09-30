@@ -21,12 +21,12 @@ export default function Header() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 transition-[background-color,box-shadow,height,padding] duration-200 ease-out ${
         scrolled ? 'bg-primary shadow-lg' : 'bg-transparent'
       }`}
     >
       <div 
-        className={`w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex items-center justify-between text-white transition-all duration-300 ${
+        className={`w-full max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex items-center justify-between text-white transition-[background-color,box-shadow,height,padding] duration-200 ease-out ${
           scrolled ? 'h-[80px] py-4' : 'h-[120px] py-6'
         }`}
       >
