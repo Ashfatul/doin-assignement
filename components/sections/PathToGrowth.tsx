@@ -76,10 +76,15 @@ export default function PathToGrowth() {
                 </div>
               </div>
               <div className="flex -space-x-4">
-                 {[1, 2, 3, 4, 5, 6].map((i) => (
-                   <div key={i} className="w-[43px] h-[43px] rounded-full bg-gray-200 border-2 border-white" />
+                 {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                   <img
+                     key={i}
+                     src={`/images/users/${i}.png`}
+                     alt={`Student ${i}`}
+                     className="w-[43px] h-[43px] rounded-full object-cover"
+                   />
                  ))}
-                 <div className="w-[43px] h-[43px] rounded-full bg-[#d4fb20] border-2 border-white flex items-center justify-center font-sans font-bold text-xs text-text-dark z-10">
+                 <div className="w-[43px] h-[43px] rounded-full bg-[#d4fb20] flex items-center justify-center font-sans font-bold text-xs text-text-dark z-10">
                    2K+
                  </div>
               </div>

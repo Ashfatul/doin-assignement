@@ -73,7 +73,7 @@ export default function Hero() {
                      }}
                   />
 
-                  <div className="absolute right-0 top-4 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
+                  <div className="absolute right-5 top-30 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[230px]">
                      <span className="font-sans font-medium text-sm text-text-dark">
                         Learning Progress
                      </span>
@@ -86,7 +86,7 @@ export default function Hero() {
                   </div>
 
                   {/* Floating Meta */}
-                  <div className="absolute top-2 left-0 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
+                  <div className="absolute top-20 -left-10 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
                      <div>
                         <span className="font-sans font-medium text-base text-text-dark block">
                            UI/UX Design
@@ -104,7 +104,7 @@ export default function Hero() {
                   </div>
 
                   {/* Floating Card: Happy Students */}
-                  <div className="absolute bottom-20 left-0 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
+                  <div className="absolute bottom-20 -left-26 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
                      <div>
                         <span className="font-sans font-medium text-base text-text-dark block">
                            Happy Students
@@ -117,13 +117,17 @@ export default function Hero() {
                         </div>
                      </div>
                      <div className="flex -space-x-4">
-                        {[1, 2, 3, 4, 5, 6].map((i) => (
-                           <div
+                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                           <Image
                               key={i}
-                              className="w-[43px] h-[43px] rounded-full bg-gray-200 border-2 border-white"
+                              src={`/images/users/${i}.png`}
+                              alt={`Student ${i}`}
+                              width={43}
+                              height={43}
+                              className="w-[43px] h-[43px] rounded-full object-cover"
                            />
                         ))}
-                        <div className="w-[43px] h-[43px] rounded-full bg-secondary border-2 border-white flex items-center justify-center font-sans font-bold text-xs text-text-dark z-10">
+                        <div className="w-[43px] h-[43px] rounded-full bg-secondary flex items-center justify-center font-sans font-bold text-xs text-text-dark z-10">
                            2K+
                         </div>
                      </div>
