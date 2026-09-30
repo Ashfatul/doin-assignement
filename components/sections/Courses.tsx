@@ -145,7 +145,7 @@ export default function Courses() {
                         <img 
                            src={`/images/course/${course.id}.png`} 
                            alt={course.title}
-                           className="absolute inset-0 w-full h-full object-cover z-0"
+                           className="absolute inset-0 w-full h-full object-cover z-0 group-hover:scale-105 transition-transform duration-300 ease-out"
                         />
                         {/* Overlay stats */}
                         <div className="flex flex-wrap items-center gap-3 relative z-10">
@@ -166,7 +166,7 @@ export default function Courses() {
                         {/* Title & Author */}
                         <div className="flex flex-col gap-1">
                            <div className="flex justify-between">
-                              <h3 className="font-heading font-semibold text-[20px] text-black line-clamp-1">
+                              <h3 className="font-heading font-semibold text-[20px] text-black line-clamp-1 group-hover:text-primary transition-colors duration-200">
                                  {course.title}
                               </h3>
                               <div className="flex items-center gap-2">
