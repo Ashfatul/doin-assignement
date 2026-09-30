@@ -16,33 +16,50 @@ export default function Hero() {
 
          <div className="relative w-full pt-12 md:pt-24 flex flex-col items-center gap-12">
             {/* Left Content Area */}
-            <div className="flex-1 max-w-[935px] flex flex-col gap-8">
-               <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
-                  Get Access to Hundreds Courses Available
-               </h1>
-               <p className="font-sans font-normal text-lg text-[#e5e6e8] max-w-[819px]">
-                  Unlock your creativity, gain valuable knowledge, and grow your
-                  business with our wide range of courses.
-               </p>
+            <div className="relative w-full">
+               {/* Main Center Sphere */}
+               <AnimatedShape
+                  src="/images/hero/hero-shape-1.png"
+                  className="absolute bottom-0 left-0 w-[265px]"
+                  delay={0}
+                  yRange={[-10, 10]}
+               />
+               {/* Top Right Cone */}
+               <AnimatedShape
+                  src="/images/hero/hero-shape-2.png"
+                  className="absolute bottom-0 right-0 w-[210px]"
+                  delay={1}
+                  yRange={[-15, 15]}
+                  rotateRange={[0, 15, 0]}
+               />
+               <div className="flex-1 max-w-[935px] flex flex-col gap-8 mx-auto">
+                  <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
+                     Get Access to Hundreds Courses Available
+                  </h1>
+                  <p className="font-sans font-normal text-lg text-[#e5e6e8] max-w-[819px]">
+                     Unlock your creativity, gain valuable knowledge, and grow
+                     your business with our wide range of courses.
+                  </p>
 
-               {/* Search Bar */}
-               <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto rounded-full w-full max-w-[581px]">
-                  <div className="flex-1 flex items-center gap-3 px-6 py-3 bg-white rounded-full w-full">
-                     <Search className="w-5 h-5 text-text-muted" />
-                     <input
-                        type="text"
-                        placeholder="Course, topic, creator"
-                        className="w-full font-sans text-lg text-text-dark placeholder:text-text-muted outline-none bg-transparent"
-                     />
+                  {/* Search Bar */}
+                  <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto rounded-full w-full max-w-[581px]">
+                     <div className="flex-1 flex items-center gap-3 px-6 py-3 bg-white rounded-full w-full">
+                        <Search className="w-5 h-5 text-text-muted" />
+                        <input
+                           type="text"
+                           placeholder="Course, topic, creator"
+                           className="w-full font-sans text-lg text-text-dark placeholder:text-text-muted outline-none bg-transparent"
+                        />
+                     </div>
+                     <button className="flex items-center justify-center bg-secondary text-text-dark font-sans font-medium text-lg px-8 py-3 rounded-full w-full sm:w-auto hover:bg-secondary-alt transition-colors whitespace-nowrap">
+                        Search
+                     </button>
                   </div>
-                  <button className="flex items-center justify-center bg-secondary text-text-dark font-sans font-medium text-lg px-8 py-3 rounded-full w-full sm:w-auto hover:bg-secondary-alt transition-colors whitespace-nowrap">
-                     Search
-                  </button>
                </div>
             </div>
 
             {/* Right Content Area / Images */}
-            <div className="flex-1 relative w-full min-h-150 hidden lg:flex items-center justify-center pointer-none text-left">
+            <div className="flex-1 relative w-full hidden lg:flex items-center justify-center pointer-none text-left">
                {/* Hero Man */}
                <div className="relative bottom-0 w-[640px] h-[457px]">
                   <Image
@@ -56,7 +73,7 @@ export default function Hero() {
                      }}
                   />
 
-                  <div className="absolute -left-10 top-1/4 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
+                  <div className="absolute right-0 top-4 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
                      <span className="font-sans font-medium text-sm text-text-dark">
                         Learning Progress
                      </span>
@@ -69,17 +86,16 @@ export default function Hero() {
                   </div>
 
                   {/* Floating Meta */}
-                  <div className="absolute bottom-10 left-10 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
+                  <div className="absolute top-2 left-0 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
                      <div>
                         <span className="font-sans font-medium text-base text-text-dark block">
-                           Happy Students
+                           UI/UX Design
                         </span>
                         <div className="flex items-center gap-1">
                            <span className="font-sans text-xs text-text-muted">
                               200 Courses
                            </span>
-                           <span className="font-sans text-xs text-text-muted h-1 w-1 rounded-full bg-text-muted">
-                           </span>
+                           <span className="font-sans text-xs text-text-muted h-1 w-1 rounded-full bg-text-muted"></span>
                            <span className="font-sans text-xs text-text-muted">
                               1000+ Students
                            </span>
@@ -88,7 +104,7 @@ export default function Hero() {
                   </div>
 
                   {/* Floating Card: Happy Students */}
-                  <div className="absolute -bottom-10 right-10 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
+                  <div className="absolute bottom-20 left-0 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-4 min-w-[232px]">
                      <div>
                         <span className="font-sans font-medium text-base text-text-dark block">
                            Happy Students
@@ -114,26 +130,11 @@ export default function Hero() {
                   </div>
                </div>
                {/* Animated 3D Shapes */}
-               <div className="absolute top-0 right-0 w-full h-full pointer-events-none">
-                  {/* Main Center Sphere */}
-                  <AnimatedShape
-                     src="/images/hero/hero-shape-1.png"
-                     className="absolute top-0 left-0 w-[250px]"
-                     delay={0}
-                     yRange={[-10, 10]}
-                  />
-                  {/* Top Right Cone */}
-                  <AnimatedShape
-                     src="/images/hero/hero-shape-2.png"
-                     className="absolute top-0 right-0 w-[120px]"
-                     delay={1}
-                     yRange={[-15, 15]}
-                     rotateRange={[0, 15, 0]}
-                  />
+               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
                   {/* Bottom Right Ring */}
                   <AnimatedShape
                      src="/images/hero/hero-shape-3.png"
-                     className="absolute bottom-[20%] right-[5%] w-[150px]"
+                     className="absolute top-0 left-[15%] w-[175px]"
                      delay={2}
                      yRange={[-20, 20]}
                      rotateRange={[0, -15, 0]}
@@ -141,14 +142,22 @@ export default function Hero() {
                   {/* Top Left Shape */}
                   <AnimatedShape
                      src="/images/hero/hero-shape-4.png"
-                     className="absolute top-[20%] left-[5%] w-[100px]"
+                     className="absolute top-0 right-[15%] w-[188px]"
                      delay={1.5}
                      yRange={[-12, 12]}
                   />
                   {/* Bottom Left Shape */}
                   <AnimatedShape
                      src="/images/hero/hero-shape-5.png"
-                     className="absolute bottom-[10%] left-[10%] w-[130px]"
+                     className="absolute bottom-[10%] left-0 w-[342px]"
+                     delay={0.5}
+                     yRange={[-8, 8]}
+                     rotateRange={[0, 10, 0]}
+                  />
+
+                  <AnimatedShape
+                     src="/images/hero/hero-shape-6.png"
+                     className="absolute bottom-[10%] right-0 w-[330px]"
                      delay={0.5}
                      yRange={[-8, 8]}
                      rotateRange={[0, 10, 0]}
@@ -178,17 +187,17 @@ function AnimatedShape({
    return (
       <motion.div
          className={`flex items-center justify-center ${className}`}
-        //  animate={{
-        //     y: yRange,
-        //     rotate: rotateRange,
-        //  }}
-        //  transition={{
-        //     duration: 4,
-        //     repeat: Infinity,
-        //     repeatType: "reverse",
-        //     ease: "easeInOut",
-        //     delay: delay,
-        //  }}
+         //  animate={{
+         //     y: yRange,
+         //     rotate: rotateRange,
+         //  }}
+         //  transition={{
+         //     duration: 4,
+         //     repeat: Infinity,
+         //     repeatType: "reverse",
+         //     ease: "easeInOut",
+         //     delay: delay,
+         //  }}
       >
          <img
             src={src}
