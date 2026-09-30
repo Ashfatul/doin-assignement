@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import FadeIn from '@/components/ui/FadeIn';
 
 const TESTIMONIALS = [
   {
@@ -68,7 +69,7 @@ export default function Testimonials() {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {TESTIMONIALS.map((testimonial) => (
-            <div key={testimonial.id} className="flex flex-col bg-white rounded-[24px] p-6 gap-6 shadow-sm border border-border-light/40">
+            <FadeIn key={testimonial.id} delay={0.1 * testimonial.id} className="flex flex-col bg-white rounded-[24px] p-6 gap-6 shadow-sm border border-border-light/40 h-full">
               {/* Profile */}
               <div className="flex items-center gap-4">
                 <Image
@@ -88,7 +89,7 @@ export default function Testimonials() {
               <p className="font-sans font-normal text-lg text-[#4f4f4f] leading-relaxed">
                 {testimonial.text}
               </p>
-            </div>
+            </FadeIn>
           ))}
         </div>
 

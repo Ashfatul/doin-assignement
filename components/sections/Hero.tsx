@@ -51,7 +51,7 @@ export default function Hero() {
                            className="w-full font-sans text-lg text-text-dark placeholder:text-text-muted outline-none bg-transparent"
                         />
                      </div>
-                     <button className="flex items-center justify-center bg-secondary text-text-dark font-sans font-medium text-lg px-8 py-3 rounded-full w-full sm:w-auto hover:bg-secondary-alt transition-colors whitespace-nowrap">
+                     <button className="flex items-center justify-center bg-secondary text-text-dark font-sans font-medium text-lg px-8 py-3 rounded-full w-full sm:w-auto hover:bg-secondary-alt transition-[transform,color] duration-200 ease-out hover:scale-105 active:scale-95 cursor-pointer whitespace-nowrap">
                         Search
                      </button>
                   </div>

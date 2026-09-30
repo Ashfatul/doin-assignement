@@ -44,7 +44,7 @@ export default function LoginPage() {
 
                <button
                   type="submit"
-                  className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary/80 cursor-pointer transition-colors"
+                  className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer"
                >
                   Sign In
                </button>
@@ -62,7 +62,7 @@ export default function LoginPage() {
 
             {/* Social Logins */}
             <div className="flex items-center justify-center gap-4">
-               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt transition-colors cursor-pointer">
+               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer">
                   <svg
                      width="34"
                      height="34"
@@ -76,7 +76,7 @@ export default function LoginPage() {
                      />
                   </svg>
                </button>
-               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt transition-colors cursor-pointer">
+               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer">
                   <svg
                      width="33"
                      height="34"

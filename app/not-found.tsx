@@ -27,7 +27,7 @@ export default function NotFound() {
             Try to use a correct url or go back to homepage to start again
           </p>
           <Link href="/">
-            <button className="bg-[#cbfc01] text-[#0a0a0a] font-sans cursor-pointer font-medium text-lg px-8 py-4 rounded-full hover:bg-[#b8e600] transition-colors mt-6 shadow-md">
+            <button className="bg-[#cbfc01] text-[#0a0a0a] font-sans cursor-pointer font-medium text-lg px-8 py-4 rounded-full hover:bg-[#b8e600] hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out mt-6 shadow-md">
               Back to Home
             </button>
           </Link>

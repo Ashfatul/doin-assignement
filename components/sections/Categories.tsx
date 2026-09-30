@@ -1,4 +1,5 @@
 import { PencilRuler, Code, Laptop, Building2, Megaphone, Camera } from 'lucide-react';
+import FadeIn from '@/components/ui/FadeIn';
 
 const CATEGORIES = [
   { id: 1, name: 'Design', icon: PencilRuler },
@@ -29,8 +30,9 @@ export default function Categories() {
           {CATEGORIES.map((cat) => {
             const Icon = cat.icon;
             return (
-              <div 
+              <FadeIn 
                 key={cat.id} 
+                delay={0.1 * cat.id}
                 className="flex flex-col items-center justify-center w-full max-w-[170px] aspect-square bg-white border border-gray-200 rounded-[20px] gap-4 hover:shadow-lg transition-shadow cursor-pointer"
               >
                 <div className="w-[60px] h-[60px] rounded-full bg-[#CBFC01] flex items-center justify-center text-text-dark shadow-sm">
@@ -39,7 +41,7 @@ export default function Categories() {
                 <span className="font-sans font-medium text-[15px] text-[#3a3b3f] text-center leading-tight">
                   {cat.name}
                 </span>
-              </div>
+              </FadeIn>
             );
           })}
         </div>

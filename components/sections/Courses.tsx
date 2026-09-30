@@ -1,4 +1,8 @@
+"use client";
+
+import React from "react";
 import Link from "next/link";
+import FadeIn from "@/components/ui/FadeIn";
 
 const TABS = [
    "Featured",
@@ -97,6 +101,8 @@ const COURSES = [
 ];
 
 export default function Courses() {
+   const [activeTab, setActiveTab] = React.useState(0);
+
    return (
       <section className="w-full py-12 md:py-24 bg-white">
          <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-12">
@@ -118,10 +124,11 @@ export default function Courses() {
                {TABS.map((tab, idx) => (
                   <button
                      key={idx}
-                     className={`flex-shrink-0 px-6 py-3 rounded-full font-sans font-medium text-base transition-colors ${
-                        idx === 0
+                     onClick={() => setActiveTab(idx)}
+                     className={`flex-shrink-0 px-6 py-3 rounded-full font-sans font-medium text-base cursor-pointer ${
+                        activeTab === idx
                            ? "bg-secondary text-text-dark"
-                           : "bg-background-alt text-[#4b4c53] hover:bg-gray-200"
+                           : "bg-background-alt text-[#4b4c53]"
                      }`}
                   >
                      {tab}
@@ -136,9 +143,10 @@ export default function Courses() {
             {/* Course Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
                {COURSES.map((course) => (
-                  <div
+                  <FadeIn
                      key={course.id}
-                     className="flex flex-col bg-white border border-border-light rounded-[24px] p-4 gap-4 hover:shadow-xl transition-shadow cursor-pointer group"
+                     delay={0.1 * (course.id % 3)}
+                     className="flex flex-col bg-white border border-border-light rounded-[24px] p-4 gap-4 hover:shadow-xl transition-shadow cursor-pointer group h-full"
                   >
                      {/* Thumbnail Placeholder */}
                      <div className="w-full h-[195px] bg-[#443131] rounded-xl flex items-end p-3 relative overflow-hidden group-hover:opacity-90 transition-opacity">
@@ -248,7 +256,7 @@ export default function Courses() {
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </FadeIn>
                ))}
             </div>
          </div>
