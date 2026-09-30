@@ -15,18 +15,18 @@ interface AuthLayoutProps {
 
 export default function AuthLayout({ title, subtitle, children }: AuthLayoutProps) {
   return (
-    <main className="min-h-screen bg-primary flex flex-col overflow-hidden relative pb-30">
+    <main className="min-h-screen bg-primary flex flex-col overflow-hidden relative pb-5 mb:pb-30 px-4 md:px-0">
       {/* Background Rings */}
       <Grid />
 
       {/* Auth Simple Header Logo */}
-      <header className="w-full z-50 h-[120px] max-w-[1440px] flex items-center relative mx-auto">
+      <header className="w-full z-50 h-[80px] md:h-[120px] max-w-[1440px] flex items-center relative mx-auto">
         <Link href="/" className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
           <Image src="/images/small-logo.png" alt="Logo" width={37} height={37} className="w-[37px] h-[37px] object-contain" />
         </Link>
       </header>
 
-      <div className="flex-1 w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 py-12 lg:py-0 relative z-10">
+      <div className="flex-1 w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 py-4 md:py-12 lg:py-0 relative z-10">
         
         {/* Left Side: Graphic & Text */}
         <div className="flex-1 flex flex-col gap-10 max-w-[475px] relative">
@@ -228,7 +228,7 @@ function AnimatedShape({
 }) {
    return (
       <motion.div
-         className={`flex items-center justify-center ${className}`}
+         className={className}
         animate={{
         y: yRange,
         rotate: rotateRange,

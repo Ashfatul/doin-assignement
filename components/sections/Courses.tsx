@@ -120,7 +120,7 @@ export default function Courses() {
             </div>
 
             {/* Tabs */}
-            <div className="flex items-center gap-4 overflow-x-auto pb-4 hide-scrollbar justify-start xl:justify-center flex-wrap">
+            <div className="flex items-center gap-4 overflow-x-auto pb-4 hide-scrollbar justify-center flex-wrap">
                {TABS.map((tab, idx) => (
                   <button
                      key={idx}

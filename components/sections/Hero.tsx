@@ -10,7 +10,7 @@ export default function Hero() {
    return (
       <section className="relative w-full bg-primary overflow-hidden text-center pt-[120px]">
          {/* Background Rings / Decorative lines can go here as absolutely positioned SVGs */}
-         <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-[#CBFC01] pointer-events-none" />
+         <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] sm:w-[800px] sm:h-[800px] lg:w-[1149px] lg:h-[1149px] rounded-full border-[100px] sm:border-[200px] lg:border-[320px] border-[#CBFC01] pointer-events-none opacity-30 lg:opacity-100" />
 
          <Header />
 
@@ -20,14 +20,14 @@ export default function Hero() {
                {/* Main Center Sphere */}
                <AnimatedShape
                   src="/images/hero/hero-shape-1.png"
-                  className="absolute bottom-0 left-0 w-[265px]"
+                  className="absolute bottom-0 left-0 w-[120px] md:w-[180px] lg:w-[265px] opacity-20 lg:opacity-100 hidden sm:block"
                   delay={0}
                   yRange={[-10, 10]}
                />
                {/* Top Right Cone */}
                <AnimatedShape
                   src="/images/hero/hero-shape-2.png"
-                  className="absolute bottom-0 right-0 w-[210px]"
+                  className="absolute bottom-0 right-0 w-[100px] md:w-[150px] lg:w-[210px] opacity-20 lg:opacity-100 hidden sm:block"
                   delay={1}
                   yRange={[-15, 15]}
                   rotateRange={[0, 15, 0]}
@@ -42,7 +42,7 @@ export default function Hero() {
                   </p>
 
                   {/* Search Bar */}
-                  <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto rounded-full w-full max-w-[581px]">
+                  <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4 mx-auto rounded-full w-full max-w-[581px] mb-20 px-4 lg:px-0 lg:mb-0">
                      <div className="flex-1 flex items-center gap-3 px-6 py-3 bg-white rounded-full w-full">
                         <Search className="w-5 h-5 text-text-muted" />
                         <input
@@ -190,7 +190,7 @@ function AnimatedShape({
 }) {
    return (
       <motion.div
-         className={`flex items-center justify-center ${className}`}
+         className={className}
          animate={{
          y: yRange,
          rotate: rotateRange,

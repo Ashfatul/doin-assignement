@@ -9,17 +9,17 @@ export default function RegisterPage() {
     >
       <div className="flex flex-col w-full flex-1">
         {/* Form Header */}
-        <div className="flex flex-col gap-[2px] mb-[107px]">
+        <div className="flex flex-col gap-[2px] mb-4 md:mb-[107px]">
           <h2 className="font-sans font-normal text-lg text-primary leading-[28.8px]">
             Create an Account
           </h2>
-          <p className="font-heading font-semibold text-text-dark text-[44px] leading-[52.8px] tracking-[-1px]">
+          <p className="font-heading font-semibold text-text-dark text-[24px] md:text-[44px] leading-[52.8px] tracking-[-1px]">
             Welcome to ByteSpace
           </p>
         </div>
 
         {/* Form Fields */}
-        <form className="flex flex-col gap-5 w-full mb-[45px]">
+        <form className="flex flex-col gap-5 w-full mb-5 md:mb-[45px]">
           <div className="flex flex-col gap-2">
             <label className="font-sans font-medium text-sm text-text-dark">Full Name</label>
             <input 

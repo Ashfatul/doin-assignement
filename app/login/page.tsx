@@ -7,19 +7,19 @@ export default function LoginPage() {
          title="Sign in with ease"
          subtitle="Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
       >
-         <div className="flex flex-col gap-[73px] w-full flex-1">
+         <div className="flex flex-col gap-3 md:gap-[73px] w-full flex-1">
             {/* Form Header */}
-            <div className="flex flex-col gap-[2px] mb-[73px]">
+            <div className="flex flex-col gap-[2px] mb-0 md:mb-[73px]">
                <h2 className="font-sans font-normal text-lg text-primary leading-[28.8px]">
                   Sign In
                </h2>
-               <p className="font-heading font-semibold text-text-dark text-[44px] leading-[52.8px] tracking-[-1px]">
+               <p className="font-heading font-semibold text-text-dark text-[24px] md:text-[44px] leading-[52.8px] tracking-[-1px]">
                   Welcome Back
                </p>
             </div>
 
             {/* Form Fields */}
-            <form className="flex flex-col gap-5 w-full mb-[73px]">
+            <form className="flex flex-col gap-5 w-full mb-5 md:mb-[73px]">
                <div className="flex flex-col gap-2">
                   <label className="font-sans font-medium text-sm text-text-dark">
                      Email
@@ -62,7 +62,7 @@ export default function LoginPage() {
 
             {/* Social Logins */}
             <div className="flex items-center justify-center gap-4">
-               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer">
+               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer scale-70 md:scale-100">
                   <svg
                      width="34"
                      height="34"
@@ -76,7 +76,7 @@ export default function LoginPage() {
                      />
                   </svg>
                </button>
-               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer">
+               <button className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] border border-border-light hover:bg-background-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out cursor-pointer scale-70 md:scale-100">
                   <svg
                      width="33"
                      height="34"
