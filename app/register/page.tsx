@@ -7,25 +7,25 @@ export default function RegisterPage() {
       title="Sign up and come in" 
       subtitle="The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost"
     >
-      <div className="flex flex-col gap-8 w-full flex-1">
+      <div className="flex flex-col w-full flex-1">
         {/* Form Header */}
-        <div className="flex flex-col gap-2 text-center">
-          <h2 className="font-heading font-semibold text-3xl text-black">
+        <div className="flex flex-col gap-[2px] mb-[107px]">
+          <h2 className="font-sans font-normal text-lg text-primary leading-[28.8px]">
             Create an Account
           </h2>
-          <p className="font-sans font-normal text-base text-text-muted">
+          <p className="font-heading font-semibold text-text-dark text-[44px] leading-[52.8px] tracking-[-1px]">
             Welcome to ByteSpace
           </p>
         </div>
 
         {/* Form Fields */}
-        <form className="flex flex-col gap-5 w-full">
+        <form className="flex flex-col gap-5 w-full mb-[45px]">
           <div className="flex flex-col gap-2">
             <label className="font-sans font-medium text-sm text-text-dark">Full Name</label>
             <input 
               type="text" 
               placeholder="Jamie Davis" 
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-lg text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 
@@ -34,7 +34,7 @@ export default function RegisterPage() {
             <input 
               type="email" 
               placeholder="designer@example.com" 
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-lg text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 
@@ -43,24 +43,24 @@ export default function RegisterPage() {
             <input 
               type="password" 
                
-              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-base text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
+              className="w-full px-5 py-3 rounded-xl border border-border-light bg-white font-sans text-lg text-text-dark placeholder:text-text-muted focus:outline-none focus:border-primary transition-colors"
             />
           </div>
 
           <button 
             type="submit" 
-            className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-dark hover:bg-secondary/80 cursor-pointer transition-colors"
+            className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary/80 cursor-pointer transition-colors"
           >
             Continue
           </button>
         </form>
 
         {/* Footer Link */}
-        <div className="flex items-center justify-center gap-1 mt-auto pb-2">
-          <span className="font-sans font-normal text-sm text-text-muted">
+        <div className="flex items-center justify-center gap-[5px] mt-auto">
+          <span className="font-sans font-normal text-base text-text-muted leading-[25.6px]">
             Already have an account?
           </span>
-          <Link href="/login" className="font-sans font-medium text-sm text-primary hover:underline">
+          <Link href="/login" className="font-sans font-medium text-base text-primary hover:underline leading-[25.6px]">
             Login
           </Link>
         </div>

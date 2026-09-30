@@ -13,6 +13,12 @@ This project is a pixel-perfect conversion of the provided Figma designs. It inc
 - Framer Motion (animations)
 - Lucide React (icons)
 
+## Available Pages
+- **Home** (`/`): The main landing page.
+- **Register** (`/register`): The user registration page.
+- **Login** (`/login`): The user login page.
+- **404 Not Found**: A custom error page for undefined routes.
+
 ## Project Structure
 ```text
 .

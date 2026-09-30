@@ -20,10 +20,10 @@ export default function NotFound() {
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center gap-6 text-center max-w-[935px] px-6 mt-100">
-          <h1 className="font-heading font-semibold text-[40px] md:text-[72px] leading-tight text-white">
+          <h1 className="font-heading font-semibold text-[40px] md:text-[72px] leading-[1.2] md:leading-[86.4px] text-white">
             The page you are looking for doesn’t exist
           </h1>
-          <p className="font-sans font-normal text-[16px] md:text-[18px] text-[#e5e6e8]">
+          <p className="font-sans font-normal text-[16px] md:text-[18px] leading-[1.6] md:leading-[28.8px] text-[#e5e6e8]">
             Try to use a correct url or go back to homepage to start again
           </p>
           <Link href="/">
