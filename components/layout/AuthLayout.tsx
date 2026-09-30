@@ -229,17 +229,17 @@ function AnimatedShape({
    return (
       <motion.div
          className={`flex items-center justify-center ${className}`}
-        //  animate={{
-        //     y: yRange,
-        //     rotate: rotateRange,
-        //  }}
-        //  transition={{
-        //     duration: 4,
-        //     repeat: Infinity,
-        //     repeatType: "reverse",
-        //     ease: "easeInOut",
-        //     delay: delay,
-        //  }}
+        animate={{
+        y: yRange,
+        rotate: rotateRange,
+        }}
+        transition={{
+        duration: 6,
+        repeat: Infinity,
+        repeatType: "reverse",
+        ease: "easeInOut",
+        delay: delay,
+        }}
       >
          <img
             src={src}

@@ -41,17 +41,17 @@ function AnimatedShape({ src, className, delay, yRange, rotateRange = [0, 0, 0] 
   return (
     <motion.div
       className={`flex items-center justify-center ${className}`}
-      // animate={{ 
-      //   y: yRange,
-      //   rotate: rotateRange
-      // }}
-      // transition={{
-      //   duration: 4,
-      //   repeat: Infinity,
-      //   repeatType: "reverse",
-      //   ease: "easeInOut",
-      //   delay: delay
-      // }}
+      animate={{ 
+      y: yRange,
+      rotate: rotateRange
+      }}
+      transition={{
+      duration: 6,
+      repeat: Infinity,
+      repeatType: "reverse",
+      ease: "easeInOut",
+      delay: delay
+      }}
     >
       <img src={src} alt="3D Shape" className="w-full h-full object-contain drop-shadow-xl" 
         onError={(e) => {

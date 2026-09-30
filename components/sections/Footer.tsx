@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 
@@ -18,15 +19,14 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-16">
           
           {/* Brand & Newsletter */}
-          <div className="flex flex-col gap-10 max-w-[528px]">
+          <div className="flex flex-col gap-10 max-w-[510px]">
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-8 text-secondary">
-                  <svg viewBox="0 0 29 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.4375 0L28.875 8V24L14.4375 32L0 24V8L14.4375 0Z" />
-                  </svg>
-                </div>
-                <span className="font-display font-bold text-2xl tracking-wide text-text-dark">ByteSpace</span>
+                <Image src="/images/dark-logo.png"
+                  alt="ByteSpace Logo"
+                  width={170}
+                  height={37}
+                />
               </div>
               <p className="font-sans font-normal text-sm text-text-dark">
                 Stay Up to date with our latest features and releases by joining our newsletter.
