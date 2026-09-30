@@ -119,7 +119,7 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
         </div>
 
         {/* Right Side: Form Container */}
-        <div className="w-full max-w-[579px] xl:min-h-[785px] bg-white rounded-[24px] p-8 md:p-12 shadow-2xl shrink-0">
+        <div className="w-full max-w-[579px] xl:min-h-[785px] bg-white rounded-[24px] p-8 md:p-12 shadow-2xl shrink-0 flex flex-col">
           {children}
         </div>
 

@@ -7,7 +7,7 @@ export default function RegisterPage() {
       title="Sign up and come in" 
       subtitle="The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost"
     >
-      <div className="flex flex-col gap-8 w-full">
+      <div className="flex flex-col gap-8 w-full flex-1">
         {/* Form Header */}
         <div className="flex flex-col gap-2 text-center">
           <h2 className="font-heading font-semibold text-3xl text-black">
@@ -56,7 +56,7 @@ export default function RegisterPage() {
         </form>
 
         {/* Footer Link */}
-        <div className="flex items-center justify-center gap-1 mt-2">
+        <div className="flex items-center justify-center gap-1 mt-auto pb-2">
           <span className="font-sans font-normal text-sm text-text-muted">
             Already have an account?
           </span>
