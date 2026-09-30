@@ -29,7 +29,7 @@ export default function Partners() {
         >
           {/* We duplicate the array to create a seamless loop */}
           {[...PARTNERS, ...PARTNERS, ...PARTNERS].map((src, idx) => (
-            <div key={idx} className="flex items-center justify-center h-10 w-[150px] bg-gray-200/50 rounded-lg animate-pulse" title="Replace with actual partner logo">
+            <div key={idx} className="flex items-center justify-center h-10 w-[150px]" title="Replace with actual partner logo">
               {/* Fallback box shown until images are provided by user */}
               <img 
                 src={src} 
