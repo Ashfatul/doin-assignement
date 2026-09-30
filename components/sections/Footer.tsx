@@ -47,7 +47,6 @@ export default function Footer() {
           <div className="flex flex-wrap gap-12 sm:gap-24">
             
             <div className="flex flex-col gap-6">
-              <span className="font-sans font-medium text-base text-text-dark">Browse</span>
               <div className="flex flex-col gap-4">
                 <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Featured Courses</Link>
                 <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Featured Categories</Link>
@@ -57,7 +56,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-6 pt-12">
+            <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4">
                 <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Development</Link>
                 <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Marketing</Link>
@@ -68,11 +67,12 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-6">
-              <span className="font-sans font-medium text-base text-text-dark">Platform</span>
               <div className="flex flex-col gap-4">
                 <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Become a Creator</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">About Us</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Contact Us</Link>
+                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Affiliate Program</Link>
+                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Contact</Link>
+                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Help</Link>
+                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">About</Link>
               </div>
             </div>
 
@@ -82,7 +82,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border-light/20">
           <p className="font-sans font-normal text-sm text-text-dark">
-            © 2024 ByteSpace. All rights reserved.
+            @ 2023 ByteSpace. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Privacy Policy</Link>
