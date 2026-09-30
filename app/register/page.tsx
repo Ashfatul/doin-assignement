@@ -1,6 +1,13 @@
 import AuthLayout from '@/components/layout/AuthLayout';
 import Link from 'next/link';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Register | ByteSpace',
+  description: 'Create a ByteSpace account today to join thousands of learners and start exploring our vast library of courses.',
+};
+
 export default function RegisterPage() {
   return (
     <AuthLayout 

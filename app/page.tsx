@@ -7,6 +7,13 @@ import CreatorCTA from '@/components/sections/CreatorCTA';
 import Testimonials from '@/components/sections/Testimonials';
 import Footer from '@/components/sections/Footer';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'ByteSpace | Explore Diverse Learning Paths',
+  description: 'Unlock your potential with ByteSpace. Explore hundreds of high-quality courses from industry experts.',
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full overflow-x-hidden bg-white">

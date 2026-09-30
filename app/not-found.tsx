@@ -1,8 +1,14 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
 import Grid from '@/components/ui/Grid';
+
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found | ByteSpace',
+  description: 'The page you are looking for does not exist.',
+};
 
 export default function NotFound() {
   return (

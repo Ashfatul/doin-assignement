@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { BarChart2, Star } from 'lucide-react';
 import React from 'react';
 import Grid from '../ui/Grid';
 import { motion } from "framer-motion";

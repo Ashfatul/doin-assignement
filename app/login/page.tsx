@@ -1,6 +1,13 @@
 import AuthLayout from "@/components/layout/AuthLayout";
 import Link from "next/link";
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sign In | ByteSpace',
+  description: 'Sign in to your ByteSpace account to access your courses, track your progress, and continue learning.',
+};
+
 export default function LoginPage() {
    return (
       <AuthLayout
@@ -93,8 +100,8 @@ export default function LoginPage() {
                         fill="black"
                      />
                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
                         d="M16.6667 33.3333C10.1528 33.3333 4.52778 29.5833 1.79167 24.1389L7.31945 19.8472C8.63889 23.8056 12.3194 26.7361 16.6667 26.7361C18.9167 26.7361 20.8194 26.125 22.3194 25.125L27.6806 29.2917C24.9306 31.8333 21.1667 33.3333 16.6667 33.3333ZM7.31945 13.4861V9.19445H1.79167L7.31945 13.4861Z"
                         fill="black"
                      />
