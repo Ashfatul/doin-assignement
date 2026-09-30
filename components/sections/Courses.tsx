@@ -58,6 +58,42 @@ const COURSES = [
       level: "Beginner",
       students: "26+",
    },
+   {
+      id: 4,
+      title: "Balancing Productivity an...",
+      author: "purepearl studio",
+      price: "$25",
+      rating: "4.5",
+      lessons: "17 Lessons",
+      duration: "2 hours 16 mins",
+      comments: "59 Comments",
+      level: "Beginner",
+      students: "26+",
+   },
+   {
+      id: 5,
+      title: "Mastering Money Manage...",
+      author: "purepearl studio",
+      price: "$25",
+      rating: "4.5",
+      lessons: "17 Lessons",
+      duration: "2 hours 16 mins",
+      comments: "59 Comments",
+      level: "Beginner",
+      students: "26+",
+   },
+   {
+      id: 6,
+      title: "From Idea to Startup Succ...",
+      author: "purepearl studio",
+      price: "$25",
+      rating: "4.5",
+      lessons: "17 Lessons",
+      duration: "2 hours 16 mins",
+      comments: "59 Comments",
+      level: "Beginner",
+      students: "26+",
+   },
 ];
 
 export default function Courses() {
@@ -106,8 +142,13 @@ export default function Courses() {
                   >
                      {/* Thumbnail Placeholder */}
                      <div className="w-full h-[195px] bg-[#443131] rounded-xl flex items-end p-3 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+                        <img 
+                           src={`/images/course/${course.id}.png`} 
+                           alt={course.title}
+                           className="absolute inset-0 w-full h-full object-cover z-0"
+                        />
                         {/* Overlay stats */}
-                        <div className="flex flex-wrap items-center gap-3">
+                        <div className="flex flex-wrap items-center gap-3 relative z-10">
                            <div className="px-3 py-1.5 bg-[#f6f6f6] rounded-full font-sans font-medium text-xs text-text-gray">
                               {course.lessons}
                            </div>
@@ -150,7 +191,7 @@ export default function Courses() {
                             <span className="font-sans font-normal text-xs text-text-gray">
                               by
                            </span>
-                           <span className="font-sans font-medium text-sm text-primary">
+                           <span className="font-sans font-medium text-xs text-primary">
                               {course.author}
                            </span>
                            </div>
