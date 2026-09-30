@@ -7,7 +7,7 @@ export default function LoginPage() {
          title="Sign in with ease"
          subtitle="Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge."
       >
-         <div className="flex flex-col gap-8 w-full">
+         <div className="flex flex-col gap-8 w-full h-[100%]">
             {/* Form Header */}
             <div className="flex flex-col gap-2 text-center">
                <h2 className="font-heading text-lg text-primary text-left">
@@ -110,7 +110,7 @@ export default function LoginPage() {
             </div>
 
             {/* Footer Link */}
-            <div className="flex items-center justify-center gap-1 mt-2">
+            <div className="flex items-center justify-center gap-1 mt-2 flex-1 items-center">
                <span className="font-sans font-normal text-sm text-text-muted">
                   New user?
                </span>

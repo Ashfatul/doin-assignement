@@ -1,8 +1,11 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { BarChart2, Star } from 'lucide-react';
 import React from 'react';
 import Grid from '../ui/Grid';
+import { motion } from "framer-motion";
 
 interface AuthLayoutProps {
   title: string;
@@ -12,7 +15,7 @@ interface AuthLayoutProps {
 
 export default function AuthLayout({ title, subtitle, children }: AuthLayoutProps) {
   return (
-    <main className="min-h-screen bg-primary flex flex-col overflow-hidden relative">
+    <main className="min-h-screen bg-primary flex flex-col overflow-hidden relative pb-30">
       {/* Background Rings */}
       <Grid />
 
@@ -37,9 +40,33 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
           </div>
 
           {/* Decorative Cards Area (Hidden on small screens) */}
-          <div className="hidden lg:block relative h-[400px] w-full mt-10">
+          <div className="hidden lg:block relative w-full">
+            {/* Floating shapes */}
+            <AnimatedShape
+                src="/images/auth/shape1.png"
+                className="absolute top-3 left-10 z-12 w-[146px]"
+                delay={2}
+                yRange={[-20, 20]}
+                rotateRange={[0, -15, 0]}
+            />
+
+            <AnimatedShape
+                src="/images/auth/shape2.png"
+                className="absolute -bottom-25 -left-4 z-10 w-[188px]"
+                delay={2}
+                yRange={[-20, 20]}
+                rotateRange={[0, -15, 0]}
+            />
+
+            <AnimatedShape
+                src="/images/auth/shape3.png"
+                className="absolute -bottom-6 -right-12 z-20 w-[175px]"
+                delay={2}
+                yRange={[-20, 20]}
+                rotateRange={[0, -15, 0]}
+            />
             {/* Background floating card 1 */}
-            <div className="absolute top-0 left-0 transform -rotate-6 scale-90 opacity-70 pointer-events-none select-none">
+            <div className="mt-[90px] transform pointer-events-none select-none">
               <CourseCardAuth 
                 id={2} 
                 title="the Power of Big Data" 
@@ -55,7 +82,7 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
             </div>
             
             {/* Foreground floating card 2 */}
-            <div className="absolute top-10 left-10 transform z-10 shadow-2xl pointer-events-none select-none">
+            <div className="absolute top-0 left-[130px] transform z-10 shadow-2xl pointer-events-none select-none">
               <CourseCardAuth 
                 id={3} 
                 title="Build Digital Asset" 
@@ -71,7 +98,7 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
             </div>
 
             {/* Floating Happy Students */}
-            <div className="absolute bottom-10 -right-10 bg-secondary p-4 rounded-2xl w-[258px] flex flex-col gap-4 shadow-xl z-20 pointer-events-none select-none">
+            <div className="absolute -bottom-22 -right-10 bg-secondary p-4 rounded-2xl w-[258px] flex flex-col gap-4 shadow-xl pointer-events-none select-none">
               <div className="flex flex-col">
                 <span className="font-sans font-medium text-base text-text-dark">Happy Students</span>
                 <div className="flex items-center gap-1">
@@ -92,7 +119,7 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
         </div>
 
         {/* Right Side: Form Container */}
-        <div className="w-full max-w-[579px] bg-white rounded-[24px] p-8 md:p-12 shadow-2xl shrink-0">
+        <div className="w-full max-w-[579px] xl:min-h-[785px] bg-white rounded-[24px] p-8 md:p-12 shadow-2xl shrink-0">
           {children}
         </div>
 
@@ -183,4 +210,45 @@ function CourseCardAuth({ id, title, author, price, rating, lessons, duration, c
        </div>
     </div>
   );
+}
+
+
+function AnimatedShape({
+   src,
+   className,
+   delay,
+   yRange,
+   rotateRange = [0, 0, 0],
+}: {
+   src: string;
+   className: string;
+   delay: number;
+   yRange: number[];
+   rotateRange?: number[];
+}) {
+   return (
+      <motion.div
+         className={`flex items-center justify-center ${className}`}
+        //  animate={{
+        //     y: yRange,
+        //     rotate: rotateRange,
+        //  }}
+        //  transition={{
+        //     duration: 4,
+        //     repeat: Infinity,
+        //     repeatType: "reverse",
+        //     ease: "easeInOut",
+        //     delay: delay,
+        //  }}
+      >
+         <img
+            src={src}
+            alt="3D Shape"
+            className="w-full h-full object-contain drop-shadow-xl z-26"
+            onError={(e) => {
+               (e.target as HTMLImageElement).style.display = "none";
+            }}
+         />
+      </motion.div>
+   );
 }

@@ -49,7 +49,7 @@ export default function RegisterPage() {
 
           <button 
             type="submit" 
-            className="w-full py-4 mt-2 bg-primary rounded-xl font-sans font-medium text-lg text-white hover:bg-primary/90 transition-colors"
+            className="ml-auto py-3 px-6 mt-2 bg-secondary rounded-full font-sans font-medium text-lg text-dark hover:bg-secondary/80 cursor-pointer transition-colors"
           >
             Continue
           </button>
