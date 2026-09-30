@@ -10,13 +10,13 @@ export default function Hero() {
   return (
     <section className="relative w-full bg-primary overflow-hidden text-center">
       {/* Background Rings / Decorative lines can go here as absolutely positioned SVGs */}
-      <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-[#CBFC01] pointer-events-none" />
+      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full border-[320px] border-[#CBFC01] pointer-events-none" />
 
       <Header />
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 pt-12 md:pt-24 lg:px-[120px] flex flex-col items-center gap-12">
         {/* Left Content Area */}
-        <div className="flex-1 max-w-[935px] flex flex-col gap-8">
+        <div className="flex-1 max-w-[935px] flex flex-col gap-8 mb-[400px]">
           <h1 className="font-heading font-semibold text-[48px] md:text-[60px] lg:text-[72px] leading-[1.1] text-white text-center">
             Get Access to Hundreds Courses Available
           </h1>
@@ -54,15 +54,15 @@ export default function Hero() {
           {/* Animated 3D Shapes */}
           <div className="absolute top-0 right-0 w-full h-full pointer-events-none">
             {/* Main Center Sphere */}
-            <AnimatedShape src="/images/hero-shape-1.png" className="absolute top-1/2 left-1/2 w-[250px] -ml-[125px] -mt-[125px]" delay={0} yRange={[-10, 10]} />
+            <AnimatedShape src="/images/hero/hero-shape-1.png" className="absolute top-1/2 left-1/2 w-[250px] -ml-[125px] -mt-[125px]" delay={0} yRange={[-10, 10]} />
             {/* Top Right Cone */}
-            <AnimatedShape src="/images/hero-shape-2.png" className="absolute top-[10%] right-[10%] w-[120px]" delay={1} yRange={[-15, 15]} rotateRange={[0, 15, 0]} />
+            <AnimatedShape src="/images/hero/hero-shape-2.png" className="absolute top-[10%] right-[10%] w-[120px]" delay={1} yRange={[-15, 15]} rotateRange={[0, 15, 0]} />
             {/* Bottom Right Ring */}
-            <AnimatedShape src="/images/hero-shape-3.png" className="absolute bottom-[20%] right-[5%] w-[150px]" delay={2} yRange={[-20, 20]} rotateRange={[0, -15, 0]} />
+            <AnimatedShape src="/images/hero/hero-shape-3.png" className="absolute bottom-[20%] right-[5%] w-[150px]" delay={2} yRange={[-20, 20]} rotateRange={[0, -15, 0]} />
             {/* Top Left Shape */}
-            <AnimatedShape src="/images/hero-shape-4.png" className="absolute top-[20%] left-[5%] w-[100px]" delay={1.5} yRange={[-12, 12]} />
+            <AnimatedShape src="/images/hero/hero-shape-4.png" className="absolute top-[20%] left-[5%] w-[100px]" delay={1.5} yRange={[-12, 12]} />
             {/* Bottom Left Shape */}
-            <AnimatedShape src="/images/hero-shape-5.png" className="absolute bottom-[10%] left-[10%] w-[130px]" delay={0.5} yRange={[-8, 8]} rotateRange={[0, 10, 0]} />
+            <AnimatedShape src="/images/hero/hero-shape-5.png" className="absolute bottom-[10%] left-[10%] w-[130px]" delay={0.5} yRange={[-8, 8]} rotateRange={[0, 10, 0]} />
           </div>
           <div className="absolute -left-10 top-1/4 bg-white rounded-2xl p-4 shadow-xl flex flex-col gap-2 min-w-[200px]">
             <span className="font-sans font-medium text-sm text-text-dark">Learning Progress</span>
