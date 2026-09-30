@@ -13,7 +13,7 @@ const PARTNERS = [
 
 export default function Partners() {
   return (
-    <section className="w-full bg-background-alt py-12 border-y border-border-light/20 overflow-hidden flex items-center">
+    <section className="w-full bg-background-alt py-20 border-y border-border-light/20 overflow-hidden flex items-center">
       <div className="flex w-full whitespace-nowrap">
         {/* Infinite Marquee Animation */}
         <motion.div

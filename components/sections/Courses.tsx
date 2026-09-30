@@ -105,12 +105,12 @@ export default function Courses() {
    const [activeTab, setActiveTab] = React.useState(0);
 
    return (
-      <section className="w-full py-12 md:py-24 bg-white">
+      <section className="w-full py-12 md:py-20 bg-white">
          <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-12">
             {/* Heading */}
             <div className="flex flex-col items-center text-center gap-4 max-w-[917px] mx-auto">
                <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-text-main leading-tight">
-                  Discover Your Passion, Build Your Skills
+                  Discover Your Passion, <br /> Build Your Skills
                </h2>
                <p className="font-sans font-normal text-base md:text-lg text-text-muted">
                   At Bytespace Courses, we bring you closer to life-changing
@@ -142,7 +142,7 @@ export default function Courses() {
             </div>
 
             {/* Course Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                {COURSES.map((course) => (
                   <FadeIn
                      key={course.id}
@@ -171,9 +171,9 @@ export default function Courses() {
                      </div>
 
                      {/* Course Info */}
-                     <div className="flex flex-col gap-4 mt-2">
+                     <div className="flex flex-col gap-2 mt-2">
                         {/* Title & Author */}
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col gap-0">
                            <div className="flex justify-between">
                               <h3 className="font-heading font-semibold text-[20px] text-black line-clamp-1 group-hover:text-primary transition-colors duration-200">
                                  {course.title}
@@ -246,9 +246,9 @@ export default function Courses() {
                         </div>
 
                         {/* Footer: Price & Rating */}
-                        <div className="flex items-center justify-between mt-2">
+                        <div className="flex items-center justify-between">
                            <div className="flex items-end gap-1">
-                              <span className="font-heading font-semibold text-[20px] text-primary">
+                              <span className="font-heading font-semibold text-[20px] text-primary lh-1">
                                  {course.price}
                               </span>
                               <span className="font-sans font-normal text-xs text-text-gray pb-[3px]">

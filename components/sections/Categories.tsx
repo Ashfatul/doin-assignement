@@ -12,7 +12,7 @@ const CATEGORIES = [
 
 export default function Categories() {
   return (
-    <section className="w-full py-16 md:py-24 bg-white">
+    <section className="w-full pb-16 md:pb-24 bg-white">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-12">
         
         {/* Heading Area */}

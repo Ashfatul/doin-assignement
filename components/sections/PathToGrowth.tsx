@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function PathToGrowth() {
   return (
-    <section className="relative w-full py-16 md:py-32 bg-[#fafafa] overflow-hidden">
+    <section className="relative w-full py-16 md:py-26 bg-[#fafafa] overflow-hidden">
       {/* Background Gradients */}
       {/* Top Left */}
       <div 
@@ -42,7 +42,7 @@ export default function PathToGrowth() {
         }} 
       />
 
-      <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-24 lg:gap-32">
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-24 lg:gap-26">
         
         {/* Top Row */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
@@ -76,7 +76,7 @@ export default function PathToGrowth() {
           {/* Right Image/Widget Area (Boy) */}
           <div className="flex-1 relative w-full h-[500px] sm:h-[600px] hidden lg:block z-10">
             {/* Main Image */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center z-10">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[750px] flex items-center justify-center z-10">
               <img src="/images/growth-image-1.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
             </div>
 
@@ -130,7 +130,7 @@ export default function PathToGrowth() {
           {/* Left Image/Widget Area (Girl) */}
           <div className="flex-1 relative w-full h-[500px] sm:h-[600px] hidden lg:block z-10">
             {/* Main Image */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[450px] flex items-center justify-center z-10">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[750px] flex items-center justify-center z-10">
               <img src="/images/growth-image-2.png" alt="Growth" className="w-full h-auto object-contain drop-shadow-2xl" />
             </div>
 
@@ -140,7 +140,7 @@ export default function PathToGrowth() {
             </div>
 
             {/* Widget 1: Total Revenue */}
-            <div className="absolute top-[10%] left-[-20px] bg-primary p-4 rounded-2xl w-[232px] flex flex-col gap-2 shadow-[0px_20px_40px_rgba(0,0,0,0.1)]">
+            <div className="absolute top-[16%] left-[-20px] bg-primary p-4 rounded-2xl w-[232px] flex flex-col gap-2 shadow-[0px_20px_40px_rgba(0,0,0,0.1)]">
               <div className="flex flex-col">
                 <span className="font-sans font-medium text-[13px] text-white">Total Revenue</span>
                 <span className="font-sans font-normal text-[10px] text-white/70">July 1-28</span>
@@ -197,7 +197,7 @@ export default function PathToGrowth() {
           {/* Right Text Content */}
           <div className="flex-1 flex flex-col gap-8 max-w-[574px] z-10">
             <h2 className="font-heading font-semibold text-[32px] md:text-[44px] text-text-dark leading-[1.2]">
-              Create & Manage Courses Easily.
+              Create & Manage <br /> Courses Easily.
             </h2>
             <p className="font-sans font-normal text-lg text-[#4b4c53] leading-relaxed">
               ByteSpace supports individuals or entities in the creation, publication, and administration of educational courses.

@@ -15,7 +15,7 @@ export default function Hero() {
 
          <Header />
 
-         <div className="relative w-full pt-12 md:pt-24 flex flex-col items-center gap-12">
+         <div className="relative w-full pt-12 md:pt-24 flex flex-col items-center gap-8">
             {/* Left Content Area */}
             <div className="relative w-full">
                {/* Main Center Sphere */}
