@@ -21,7 +21,7 @@ export default function AuthLayout({ title, subtitle, children }: AuthLayoutProp
 
       {/* Auth Simple Header Logo */}
       <header className="w-full z-50 h-[120px] max-w-[1440px] flex items-center relative mx-auto">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity">
           <Image src="/images/small-logo.png" alt="Logo" width={37} height={37} className="w-[37px] h-[37px] object-contain" />
         </Link>
       </header>

@@ -1,6 +1,15 @@
 import Link from 'next/link';
 
+
+const FooterLink = ({ href, children }: { href: string, children: React.ReactNode }) => (
+  <Link href={href} className="relative group w-fit font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors cursor-pointer">
+    {children}
+    <span className="absolute -bottom-0.5 left-0 w-full h-[1px] bg-primary transform scale-x-0 origin-left transition-transform duration-200 ease-out group-hover:scale-x-100"></span>
+  </Link>
+);
+
 export default function Footer() {
+
   return (
     <footer className="w-full bg-white pt-20 pb-10 border-t border-border-light/20">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-[120px] flex flex-col gap-24">
@@ -33,7 +42,7 @@ export default function Footer() {
                     className="w-full font-sans text-base text-text-dark placeholder:text-text-dark outline-none bg-transparent"
                   />
                 </div>
-                <button className="flex items-center justify-center px-6 py-3 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary-alt transition-colors w-full sm:w-auto">
+                <button className="flex items-center justify-center px-6 py-3 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary-alt hover:scale-105 active:scale-95 transition-[transform,color] duration-200 ease-out w-full sm:w-auto cursor-pointer">
                   Search
                 </button>
               </div>
@@ -48,31 +57,31 @@ export default function Footer() {
             
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4">
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Featured Courses</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Featured Categories</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Business</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">IT</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Design</Link>
+                <FooterLink href="#">Featured Courses</FooterLink>
+                <FooterLink href="#">Featured Categories</FooterLink>
+                <FooterLink href="#">Business</FooterLink>
+                <FooterLink href="#">IT</FooterLink>
+                <FooterLink href="#">Design</FooterLink>
               </div>
             </div>
 
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4">
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Development</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Marketing</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Photography</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Finance</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Sport</Link>
+                <FooterLink href="#">Development</FooterLink>
+                <FooterLink href="#">Marketing</FooterLink>
+                <FooterLink href="#">Photography</FooterLink>
+                <FooterLink href="#">Finance</FooterLink>
+                <FooterLink href="#">Sport</FooterLink>
               </div>
             </div>
 
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-4">
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Become a Creator</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Affiliate Program</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Contact</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Help</Link>
-                <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">About</Link>
+                <FooterLink href="#">Become a Creator</FooterLink>
+                <FooterLink href="#">Affiliate Program</FooterLink>
+                <FooterLink href="#">Contact</FooterLink>
+                <FooterLink href="#">Help</FooterLink>
+                <FooterLink href="#">About</FooterLink>
               </div>
             </div>
 
@@ -85,9 +94,9 @@ export default function Footer() {
             @ 2023 ByteSpace. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Terms of Service</Link>
-            <Link href="#" className="font-sans font-normal text-sm text-text-dark hover:text-primary transition-colors">Cookies Settings</Link>
+            <FooterLink href="#">Privacy Policy</FooterLink>
+            <FooterLink href="#">Terms of Service</FooterLink>
+            <FooterLink href="#">Cookies Settings</FooterLink>
           </div>
         </div>
 

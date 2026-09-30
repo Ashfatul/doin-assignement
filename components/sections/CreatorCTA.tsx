@@ -29,7 +29,7 @@ export default function CreatorCTA() {
           </p>
         </div>
         
-        <button className="flex items-center justify-center px-8 py-3 bg-secondary rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary-alt transition-colors w-full sm:w-auto">
+        <button className="flex items-center justify-center px-8 py-3 bg-secondary cursor-pointer rounded-full font-sans font-medium text-lg text-text-dark hover:bg-secondary-alt transition-colors w-full sm:w-auto">
           Join as Creator
         </button>
       </div>
